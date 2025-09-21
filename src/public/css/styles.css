@@ -1,0 +1,76 @@
+body {
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f2f5;
+}
+
+header {
+  padding: 10px;
+  background-color: #bde8d8;
+  color: rgb(56, 80, 31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+footer {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ccc;
+}
+
+nav {
+  display:flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.opcion-menu {
+    display: block;
+    padding: 10px;
+}
+
+/*Pagina de Inicio [Home]*/
+.contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    align-items: left;
+}
+
+#titulo-home, #titulo-tiemporeal {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-producto {
+    padding: 5px;
+}
+
+#form-agregar {
+    display: flex;
+    background-color: #bde8d8;
+    align-items: center;
+    padding: 20px;
+}
+
+input, .btnAgregar {
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 1em;
+}

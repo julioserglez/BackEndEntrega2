@@ -1,0 +1,18 @@
+<section>
+    <h2 id="titulo-tiemporeal">Lista de Productos</h2>
+    <ul class="contenedor-productos" id="lista-productos">
+        {{#each productos}}
+        <li class="contenedor-producto">
+            <strong>{{name}}</strong> - ${{price}} | {{description}} <button class="eliminar" data-id="{{id}}">Eliminar</button>
+        </li>
+        {{/each}}
+    </ul>
+    <form id="form-agregar">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="descripcion" placeholder="Descripción" required>
+        <input type="number" name="precio" placeholder="Precio" min="1" required>
+        <button class="btnAgregar" type="submit">Agregar producto</button>
+    </form>
+</section>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realtime.js"></script>

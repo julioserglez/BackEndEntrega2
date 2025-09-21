@@ -1,0 +1,10 @@
+<section>
+    <h2 id="titulo-home">Lista de Productos</h2>
+    <ul class="contenedor-productos">
+        {{#each productos}}
+        <li class="contenedor-producto">
+            <strong>{{name}}</strong> - ${{price}} | {{description}}
+        </li>
+        {{/each}}
+    </ul>
+</section>
